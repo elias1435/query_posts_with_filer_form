@@ -1,0 +1,94 @@
+.job-description p {
+    margin-bottom: 10px;
+}
+#load-more-btn {
+    margin: 40px auto;
+    border-radius: 30px;
+    color: #fff !important;
+    background-color: #F5AB95 !important;
+}
+.has-more-posts {
+    display: none;
+}
+#custom-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+#custom-search-form select,
+#custom-search-form input {
+    height: 40px;
+}
+a.job-details-link {
+    font-family: "Wavehaus95 Semi Bold", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3em;
+    background-color: #F5AB95;
+    border-radius: 50px 50px 50px 50px;
+    padding: 12px 25px 10px 25px;
+    border: 1px solid #F5AB95;
+    color: #fff !important;
+}
+a.job-details-link:hover {
+    background-color: #ffffff;
+    color: #F5AB95 !important;
+    padding: 12px 25px 10px 25px;
+    border: 1px solid #F5AB95;
+}
+
+/* search-results */
+#search-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.job-item {
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-featured-image img {
+    width: 210px;
+    height: auto;
+    margin-bottom: 8px;
+}
+.job-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--e-global-color-text);
+    margin-bottom: 0;
+}
+.job-salary, 
+.job-location {
+    font-size: 16px;
+    color: var(--e-global-color-text);
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: "Roboto", Sans-serif !important;
+    line-height: 20.8px;
+}
+.job-location {
+    margin-bottom: 13px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+#search-results {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+#search-results {
+    grid-template-columns: 1fr;
+}
+}
